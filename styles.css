@@ -1,0 +1,16 @@
+body {
+    margin-bottom: 5%;
+}
+
+
+#currentCity {
+    padding: 3%;
+}
+
+#card-view {
+    padding: 2px;
+}
+
+.reset {
+    display: none;
+}
