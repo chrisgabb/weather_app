@@ -20,7 +20,7 @@ $("#addCity").on("click", function (event) {
 function lastSearchFunction() {
     var apiKey = "7d7923df6842bd1066fc6aab55ecf56b"
     var cityName = lastSearch
-    var queryURL = `http://api.openweathermap.org/data/2.5/forecast?q=${cityName}&appid=${apiKey}&units=imperial`
+    var queryURL = `https://api.openweathermap.org/data/2.5/forecast?q=${cityName}&appid=${apiKey}&units=imperial`
     console.log(queryURL)
 
 
@@ -48,7 +48,7 @@ var windSpeed = response.list[0].wind.speed
 var lat = response.city.coord.lat;
 var lon = response.city.coord.lon;
 
-var uvUrl = `http://api.openweathermap.org/data/2.5/uvi?appid=${apiKey}&lat=${lat}&lon=${lon}&units=imperial`
+var uvUrl = `https://api.openweathermap.org/data/2.5/uvi?appid=${apiKey}&lat=${lat}&lon=${lon}&units=imperial`
 console.log(uvUrl)
 
 console.log(cityName)
@@ -60,7 +60,7 @@ $.ajax({
     var uvIndex = response.value
     console.log(response)
 
-var iconPic = `http://openweathermap.org/img/wn/${weatherIcon}@2x.png`
+var iconPic = `https://openweathermap.org/img/wn/${weatherIcon}@2x.png`
 // Creating dynamic bootstrap jumbotron for current day
     var currentDayJumbo = $(`<div class="jumbotron">
     <h1 class="display-4">${properCity}</h1>
@@ -110,7 +110,7 @@ var iconPic = `http://openweathermap.org/img/wn/${weatherIcon}@2x.png`
             var windSpeed = response.list[i].wind.speed
             // Latitude for *UV Index*
             console.log(response.city.coord.lat)
-            var iconPic = `http://openweathermap.org/img/wn/${weatherIcon}@2x.png`
+            var iconPic = `https://openweathermap.org/img/wn/${weatherIcon}@2x.png`
 
 
             // Creating dynamic bootstrap cards for days 1-4
@@ -141,7 +141,7 @@ var iconPic = `http://openweathermap.org/img/wn/${weatherIcon}@2x.png`
 function selectWeather() {
     var apiKey = "7d7923df6842bd1066fc6aab55ecf56b"
     var cityName = $("#userInput").val().trim()
-    var queryURL = `http://api.openweathermap.org/data/2.5/forecast?q=${cityName}&appid=${apiKey}&units=imperial`
+    var queryURL = `https://api.openweathermap.org/data/2.5/forecast?q=${cityName}&appid=${apiKey}&units=imperial`
     console.log(queryURL)
 
 
@@ -169,7 +169,7 @@ var windSpeed = response.list[0].wind.speed
 var lat = response.city.coord.lat;
 var lon = response.city.coord.lon;
 
-var uvUrl = `http://api.openweathermap.org/data/2.5/uvi?appid=${apiKey}&lat=${lat}&lon=${lon}&units=imperial`
+var uvUrl = `https://api.openweathermap.org/data/2.5/uvi?appid=${apiKey}&lat=${lat}&lon=${lon}&units=imperial`
 console.log(uvUrl)
 
 console.log(cityName)
@@ -181,7 +181,7 @@ $.ajax({
     var uvIndex = response.value
     console.log(response)
 
-var iconPic = `http://openweathermap.org/img/wn/${weatherIcon}@2x.png`
+var iconPic = `https://openweathermap.org/img/wn/${weatherIcon}@2x.png`
 // Creating dynamic bootstrap jumbotron for current day
     var currentDayJumbo = $(`<div class="jumbotron">
     <h1 class="display-4">${properCity}</h1>
@@ -231,7 +231,7 @@ var iconPic = `http://openweathermap.org/img/wn/${weatherIcon}@2x.png`
             var windSpeed = response.list[i].wind.speed
             // Latitude for *UV Index*
             console.log(response.city.coord.lat)
-            var iconPic = `http://openweathermap.org/img/wn/${weatherIcon}@2x.png`
+            var iconPic = `https://openweathermap.org/img/wn/${weatherIcon}@2x.png`
 
 
             // Creating dynamic bootstrap cards for days 1-4
