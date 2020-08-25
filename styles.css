@@ -23,6 +23,7 @@ body {
     text-align: center;
     background-color:  rgb(165, 159, 156);
     color: black;
+    min-height: 30rem;
 }
 
 .jumbo-view {
