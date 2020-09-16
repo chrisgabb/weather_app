@@ -257,18 +257,3 @@ var iconPic = `https://openweathermap.org/img/wn/${weatherIcon}@2x.png`
 
 
     }
-        // // Function for UV Index CSS
-        // function uvColor () {
-        //     if (uvIndex < 3) {
-        //     document.getElementById("uvElem").classList.add('greenIndex')
-        //     }
-        //     if (uvIndex < 6 && uvIndex >= 3) {
-        //     document.getElementById("uvElem").classList.add('yellowIndex')
-        //     }
-        //     if (uvIndex < 8 && uvIndex >= 6) {
-        //     document.getElementById("uvElem").classList.add('orangeIndex')
-        //     }
-        //     if (uvIndex < 8 && uvIndex >= 6) {
-        //     document.getElementById("uvElem").classList.add('redIndex')
-        //     }
-        // }
